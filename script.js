@@ -268,3 +268,10 @@ window.addEventListener('load', function() {
         document.body.style.opacity = '1';
     }, 100);
 });
+// Dark mode toggle
+const darkToggle = document.getElementById('darkModeToggle');
+
+darkToggle.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+    darkToggle.textContent = document.body.classList.contains('dark-mode') ? '☀️ Light Mode' : '🌙 Dark Mode';
+});
